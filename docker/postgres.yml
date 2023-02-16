@@ -1,0 +1,10 @@
+version: '3'
+services:
+  base-project-pg:
+    image: postgres:13.3
+    environment:
+      - POSTGRES_USER=${BASEPROJECT_DATABASE_USERNAME}
+      - POSTGRES_PASSWORD=${BASEPROJECT_DATABASE_PASSWORD}
+      - POSTGRES_DB=${BASEPROJECT_DATABASE_NAME}
+    ports:
+      - '${BASEPROJECT_DATABASE_PORT}:5432'

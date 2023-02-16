@@ -1,0 +1,6 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://${BASEPROJECT_DATABASE_HOST}:${BASEPROJECT_DATABASE_PORT}/${BASEPROJECT_DATABASE_NAME}
+    username: ${BASEPROJECT_DATABASE_USERNAME}
+    password: ${BASEPROJECT_DATABASE_PASSWORD}
+    driverClassName: org.postgresql.Driver
