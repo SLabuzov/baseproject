@@ -1,0 +1,6 @@
+version: '3'
+services:
+  base-project-sonar:
+    image: sonarqube:9.9.0-community
+    ports:
+      - '9000:9000'
